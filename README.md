@@ -27,9 +27,20 @@ In this project you will create a login page and request a token from the server
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] Explain what a token is used for.
+
+  - Tokens are a very important aspect in front-end development!  They are used for authentication with registration and logins.  In more advanced terms it's a cryptic bit of text issued by the server.  They are used to ensure every request to a server is verified.
+
 - [ ] What steps can you take in your web apps to keep your data secure?
+
+  - Obviously you want to make sure people are verified before being able to visit your website and so you need to have protected routes and an authentication header.  Making sure people can't get on unless they make an account and are verified.  Once verified then being able to get into the protected routes that you have set up.
+
 - [ ] Describe how web servers work.
+
+  - Web servers can mean 2 things.  a computer that stores the code for a website, or a program that runs on such a computer.  Together there are servers all over the world, and they're all sharing data with each other which is why we can get info from clear across the world.  It's what makes the world wide web possible.
+
 - [ ] Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.
+
+  - The HTTP methods connected to the CRUD acronym are PUT requests and Delete requests.  The Put request is the U in crUd and the Delete request is the D in cruD.  U stands for update which is what we're doing when we're doing Put requests.  We're updating state.  And the D deletes info we may not need anymore.
 
 
 ## Project Set Up
