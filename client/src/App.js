@@ -10,10 +10,10 @@ function App() {
   return (
     <Router>
       <div className="App">
-        {/* <header>
+        <header>
           <Link to='/login'>Login</Link>
-          <Link to='/protected'>Bubbles</Link>
-        </header> */}
+          <Link to='/bubble-page'>Bubbles</Link>
+        </header>
 
         {/* <Switch> */}
           <PrivateRoute exact path='/bubble-page' component={BubblePage}/>

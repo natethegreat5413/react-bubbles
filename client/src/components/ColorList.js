@@ -28,6 +28,7 @@ const ColorList = ({ colors, updateColors, refreshHandler }) => {
     .then(res => {
       setColorToEdit(res.data)
       push(`/bubble-page/`)
+      refreshHandler()
     })
     .catch(error => {
       console.log(error)
@@ -45,6 +46,7 @@ const ColorList = ({ colors, updateColors, refreshHandler }) => {
     .delete(`/api/colors/${color.id}`)
     .then(res => {
       push(`/bubble-page`)
+      refreshHandler()
     })
     .catch(error => {
       console.log(error)
