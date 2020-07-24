@@ -16,7 +16,7 @@ function App() {
         </header> */}
 
         {/* <Switch> */}
-          <PrivateRoute exact path='/protected' component={BubblePage}/>
+          <PrivateRoute exact path='/bubble-page' component={BubblePage}/>
           <Route exact path="/login" component={Login} />
           {/* <Route component={Login}/> */}
           {/* 

@@ -42,12 +42,15 @@ const ColorList = ({ colors, updateColors, refreshHandler }) => {
   const deleteColor = color => {
     // make a delete request to delete this color
     axiosWithAuth()
-    .delete(`/api/colors/${colorToEdit.id}`)
+    .delete(`/api/colors/${color.id}`)
     .then(res => {
-      push('/')
+      push(`/bubble-page`)
     })
     .catch(error => {
       console.log(error)
+      .finally(() => {
+        refreshHandler()
+      })
     })
   };
 

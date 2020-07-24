@@ -25,7 +25,7 @@ class Login extends React.Component {
       .then(res => {
         // console.log(res)
         window.localStorage.setItem('token', res.data.payload)
-        this.props.history.push('/protected')
+        this.props.history.push('/bubble-page')
       })
       .catch(error => {
         console.log('There was an error logging in', error)
